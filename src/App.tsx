@@ -1,15 +1,17 @@
-import './App.css'
-import {fetchData} from './api/FetchData'
+import "./App.module.scss";
+import Incident from "./components/Incident";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient()
 
 function App() {
-
-  const data = fetchData()
-  console.log(data)
   return (
     <>
-       <h1>Yatara</h1>
+    <QueryClientProvider client={queryClient}>
+      <Incident/>
+    </QueryClientProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

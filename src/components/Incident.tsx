@@ -24,6 +24,7 @@ const Incident: React.FC = () => {
     return (
         <div className={styles.incidentContainer}>
             <h3 id={styles.carrier_name}>{data.carrier.carrier_name}</h3>
+            <button id={styles.incidentbtn}><h3>Incidents</h3></button>
             <Investigation data={data.data} />
             <Accident data={data.data}/>
         </div>

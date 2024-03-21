@@ -1,3 +1,33 @@
-.AccidentContainer{
-    
+.AccidentContainer {
+  height: 500px;
+  width: 98vw;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+#AccidentFile93 {
+  height: 45px;
+  width: 98vw;
+  background-color: #103960;
+  color: white;
+}
+.dateFieldContainer {
+  display: flex;
+  margin-left: 789px;
+}
+
+.parentdivmap {
+  display: flex;
+
+  .question {
+    background-color: white;
+    height: 80%;
+    width: 68%;
+    margin-left: 19px;
+    margin-top: 17px;
+
+    .questionUl {
+      list-style: none;
+    }
+  }
 }

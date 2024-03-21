@@ -15,12 +15,16 @@ const Investigation: React.FC<{ data: Data }> = (props) => {
     const { data } = props
     return (
         <div className={styles.investigationContainer}>
-            <h4 id={styles.investigation93}>Investigation93</h4>
+            <h2 id={styles.investigation93}>Investigation93</h2>
+            <div className={styles.answercommentdiv}>
+                <h3 id={styles.answer}>Answer?</h3>
+                <h3 id={styles.comment}>Comments</h3>
+            </div>
             <div>
                 {data?.investigation93?.map((item: Incident) => (
-                    <div className={styles.parentdivmap}>
+                    <div key={item.id}   className={styles.parentdivmap}>
                         <div className={styles.questions}>
-                            <ul className={styles.qestionUl} key={item.id}>
+                            <ul className={styles.questionUl} key={item.id}>
                                 <li>{item.question}</li>
                             </ul>
                         </div>
@@ -32,7 +36,7 @@ const Investigation: React.FC<{ data: Data }> = (props) => {
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                     <option value="partial">Partial</option>
-                                    <option value="N/A">N/A</option>
+                                    <option value="n/a">N/A</option>
                                 </select>
                             </form>
                         </div>

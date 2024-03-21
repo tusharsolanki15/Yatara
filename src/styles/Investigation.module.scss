@@ -1,15 +1,26 @@
 .investigationContainer {
-  height: 212px;
+  height: 250px;
   width: 98vw;
   border: 1px solid black;
   margin-top: 10px;
 }
 
 #investigation93 {
-  height: 30px;
+  height: 45px;
   width: 98vw;
   background-color: #103960;
   color: white;
+}
+
+.answercommentdiv {
+  display: flex;
+  margin-left: 776px;
+  margin-top: 4px;
+  margin-bottom: -13px;
+  
+  #comment{
+    margin-left: 114px;
+  }
 }
 
 .parentdivmap {
@@ -22,21 +33,25 @@
     width: 68%;
     margin-left: 19px;
     margin-top: 17px;
+
+    .questionUl {
+      list-style: none;
+    }
   }
 
-  .investigationDropdown{
+  .investigationDropdown {
     height: 23px;
     // width: 100vw;
     margin-left: 84px;
     margin-top: 16px;
 
-    #dropdownselect{
-        height: 34px;
-        width: 162px;
+    #dropdownselect {
+      height: 34px;
+      width: 162px;
     }
   }
 
-  .investigationComment{
+  .investigationComment {
     margin-top: 16px;
     margin-left: 18px;
     margin-right: 216px;
